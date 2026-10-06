@@ -1,1 +1,127 @@
+* {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f7f7;
+    color: #1f2933;
+    line-height: 1.6;
+}
+
+nav {
+    background: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dddddd;
+}
+
+nav h2 {
+    margin: 0;
+}
+
+nav a {
+    color: #1f2933;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #3765a3;
+}
+
+main {
+    width: 84%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.hero {
+    padding: 100px 0 80px;
+    max-width: 750px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    margin: 10px 0;
+}
+
+.intro {
+    font-size: 22px;
+    max-width: 700px;
+}
+
+.label {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #607080;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #1f2933;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.project {
+    background: white;
+    padding: 35px;
+    border-radius: 10px;
+    margin-bottom: 70px;
+}
+
+.about-section {
+    max-width: 800px;
+    padding: 70px 0;
+}
+
+.about-section h1 {
+    font-size: 48px;
+    margin-top: 5px;
+}
+
+.about-section h2 {
+    margin-top: 45px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills span {
+    background: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1px solid #dddddd;
+}
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .about-section h1 {
+        font-size: 38px;
+    }
+}
