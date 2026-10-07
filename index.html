@@ -3,50 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Matthew Scarpello data science portfolio">
     <title>Matthew Scarpello | Data Science Portfolio</title>
-    <link rel="stylesheet" href="./style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=1">
 </head>
 
 <body>
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <span class="brand-mark">MS</span>
+            <span>Matthew Scarpello</span>
+        </a>
 
-    <nav>
-        <h2>Matthew Scarpello</h2>
-
-        <div>
-            <a href="index.html">Home</a>
+        <nav aria-label="Main navigation">
+            <a href="index.html" class="active">Home</a>
             <a href="about.html">About</a>
-        </div>
-    </nav>
+            <a href="#project">Project</a>
+        </nav>
+    </header>
 
     <main>
-
         <section class="hero">
-            <p class="label">DATA SCIENCE PORTFOLIO</p>
+            <p class="eyebrow">DATA SCIENCE PORTFOLIO</p>
 
-            <h1>Hi, I'm Matthew.</h1>
+            <div class="hero-grid">
+                <div>
+                    <h1>Curiosity.<br>Evidence.<br>Understanding.</h1>
 
-            <p class="intro">
-                I am a data science student interested in using data,
-                technology, and scientific thinking to better understand
-                real-world problems.
-            </p>
+                    <p class="hero-text">
+                        I am a data science student interested in using data,
+                        technology, and scientific thinking to better understand
+                        real-world problems.
+                    </p>
 
-            <a class="button" href="about.html">Learn More About Me</a>
+                    <div class="hero-actions">
+                        <a class="button primary" href="#project">View Featured Project</a>
+                        <a class="button secondary" href="about.html">About Me</a>
+                    </div>
+                </div>
+
+                <aside class="hero-note">
+                    <span class="note-number">01</span>
+                    <p>
+                        Building practical data science projects through
+                        analysis, modeling, visualization, and communication.
+                    </p>
+                </aside>
+            </div>
         </section>
 
-        <section class="project">
-            <p class="label">FEATURED PROJECT</p>
+        <section class="process-section">
+            <p class="eyebrow">THE PROCESS</p>
+            <h2>From question to insight.</h2>
 
-            <h2>NOAA Storm Events Analysis</h2>
+            <div class="process-grid">
+                <div class="process-item">
+                    <span>01</span>
+                    <h3>Ask</h3>
+                    <p>Define a useful question.</p>
+                </div>
 
-            <p>
-                Using NOAA Storm Events data, my team is exploring whether
-                characteristics of severe weather events can help predict
-                whether an event is associated with recorded economic damage.
-            </p>
+                <div class="process-item">
+                    <span>02</span>
+                    <h3>Analyze</h3>
+                    <p>Explore data and build models.</p>
+                </div>
+
+                <div class="process-item">
+                    <span>03</span>
+                    <h3>Communicate</h3>
+                    <p>Turn results into clear findings.</p>
+                </div>
+            </div>
         </section>
 
+        <section class="project-section" id="project">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">SELECTED WORK</p>
+                    <h2>Featured project.</h2>
+                </div>
+                <span class="project-count">01 / 01</span>
+            </div>
+
+            <article class="project-card">
+                <div class="project-number">01</div>
+
+                <div class="project-content">
+                    <p class="project-label">DSC 450 CAPSTONE</p>
+                    <h3>NOAA Storm Events Analysis</h3>
+
+                    <p>
+                        Using NOAA Storm Events data, my team is exploring whether
+                        characteristics of severe weather events can help predict
+                        whether an event is associated with recorded economic damage.
+                    </p>
+
+                    <div class="project-meta">
+                        <span><strong>Focus:</strong> Predictive modeling</span>
+                        <span><strong>Tools:</strong> Python, pandas, scikit-learn</span>
+                    </div>
+
+                    <p class="coming-soon">
+                        Full project page coming later in the course.
+                    </p>
+                </div>
+            </article>
+        </section>
     </main>
 
+    <footer>
+        <p>Matthew Scarpello</p>
+        <p>Data Science Portfolio</p>
+    </footer>
 </body>
 </html>
